@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="Confluent.Kafka" />
+        <PackageReference Include="Google.Protobuf" />
+        <PackageReference Include="Grpc.Tools"/>
+        <PackageReference Include="Itmo.Dev.Platform.Common" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf ProtoRoot="protos" Include="protos\**\*.proto" GrpcServices="None"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Application\ServiceManagement.Application.Contracts\ServiceManagement.Application.Contracts.csproj"/>
+    </ItemGroup>
+
+
+
+</Project>
